@@ -8,10 +8,6 @@ apt-get install aptitude
 apt-get install --reinstall ca-certificates -y
 apt-get install apt-transport-https wget gnupg -y
 
-# install git
-apt-get install -y git
-# install python 3.7
-apt-get install -y python3.7
 # install clang 13
 wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 13
 # install cmake 3.16
