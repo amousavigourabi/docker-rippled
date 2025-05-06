@@ -34,6 +34,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.7' 
+
       - name: Pull bugged Rippled
         uses: actions/checkout@v4
         with:
