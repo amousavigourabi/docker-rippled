@@ -43,9 +43,8 @@ jobs:
 
       - name: Build bugged Rippled
         run: |
-          ls -la
-          chmod +x ./.github/actions/build.sh
-          ./.github/actions/build.sh
+          chmod +x ./.github/workflows/build.sh
+          ./.github/workflows/build.sh
         shell: bash
 
       # Install the cosign tool except on PR
