@@ -43,6 +43,7 @@ jobs:
 
       - name: Build bugged Rippled
         run: |
+          ls -la
           chmod +x ./.github/actions/build.sh
           ./.github/actions/build.sh
         shell: bash
