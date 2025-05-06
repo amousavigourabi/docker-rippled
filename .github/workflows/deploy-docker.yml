@@ -37,7 +37,7 @@ jobs:
       - name: Pull bugged Rippled
         uses: actions/checkout@v4
         with:
-          name: amousavigourabi/bug-seeded-rippled
+          repository: amousavigourabi/bug-seeded-rippled
           ref: seeded-2.4.0-do-not-move-on-consensus
 
       - name: Build bugged Rippled
