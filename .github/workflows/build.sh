@@ -17,6 +17,8 @@ pip install conan==1.60.0
 # libstdc++
 apt-get install -y libstdc++6
 
+cd bug-seeded-rippled
+
 # set up conan profile
 conan profile new default --detect
 conan profile update settings.compiler.cppstd=20 default
