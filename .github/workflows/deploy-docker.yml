@@ -41,11 +41,6 @@ jobs:
           ref: seeded-2.4.0-do-not-move-on-consensus
           path: ./bug-seeded-rippled
 
-      - name: Install Conan
-        uses: turtlebrowser/get-conan@main
-        with:
-          version: 1.60.0
-
       - name: Build bugged Rippled
         run: |
           chmod +x ./.github/workflows/build.sh
