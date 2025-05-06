@@ -17,7 +17,8 @@ wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 13
 # install cmake 3.16
 apt-get install -y cmake
 # install conan 1.60
-python3 -m pip install --force-reinstall -v "conan==1.60.0"
+python3 -m pip install -U patch-ng
+python3 -m pip install -v "conan==1.60.0"
 # libstdc++
 apt-get install -y libstdc++6
 
