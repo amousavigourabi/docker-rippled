@@ -6,9 +6,6 @@ COPY bug-seeded-rippled/.build/rippled /opt/ripple/bin/rippled
 COPY entrypoint /entrypoint.sh
 
 RUN apt-get update -y && \
-    apt-get upgrade -y && \
-    apt-get install build-essential && \
-    apt-get install aptitude && \
     apt-get install --reinstall ca-certificates -y && \
     apt-get install apt-transport-https wget gnupg -y && \
     rm -rf /var/lib/apt/lists/* && \
