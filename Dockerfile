@@ -4,7 +4,6 @@ RUN export LANGUAGE=C.UTF-8; export LANG=C.UTF-8; export LC_ALL=C.UTF-8; export 
 
 COPY bug-seeded-rippled/.build/rippled /opt/ripple/bin/rippled
 COPY config /etc/opt/ripple
-
 COPY entrypoint /entrypoint.sh
 
 RUN export PATH=$PATH:/opt/ripple/bin/ && \
