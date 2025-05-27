@@ -7,15 +7,16 @@ apt-get install build-essential
 apt-get install aptitude
 apt-get install --reinstall ca-certificates -y
 apt-get install apt-transport-https wget gnupg -y
+apt-get install binutils -y
 
 # install clang 13
 wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 13
 # install cmake 3.16
-apt-get install -y cmake
+apt-get install cmake -y
 # install conan 1.60
 pip install conan==1.60.0
 # libstdc++
-apt-get install -y libstdc++6
+apt-get install libstdc++6 -y
 
 cd bug-seeded-rippled
 
@@ -37,3 +38,4 @@ cd .build
 conan install .. --output-folder . --build missing --settings build_type=Release
 cmake -DCMAKE_TOOLCHAIN_FILE:FILEPATH=build/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release -Dxrpld=ON -Dtests=ON ..
 cmake --build .
+strip .build/rippled
