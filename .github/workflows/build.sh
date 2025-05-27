@@ -38,4 +38,4 @@ cd .build
 conan install .. --output-folder . --build missing --settings build_type=Release
 cmake -DCMAKE_TOOLCHAIN_FILE:FILEPATH=build/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release -Dxrpld=ON -Dtests=ON ..
 cmake --build .
-strip .build/rippled
+strip rippled
