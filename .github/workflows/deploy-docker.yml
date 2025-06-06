@@ -30,7 +30,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        bug: [seeded-2.4.0-do-not-move-on-consensus, seeded-2.4.0-fail-monotonicity, seeded-2.4.0-lower-agreement-threshold, seeded-2.4.0-remove-consensus-checks]
+        bug: [seeded-2.4.0-do-not-move-on-consensus, seeded-2.4.0-fail-monotonicity, seeded-2.4.0-lower-agreement-threshold, seeded-2.4.0-remove-consensus-checks, seeded-2.4.0-fully-lowered-threshold]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
